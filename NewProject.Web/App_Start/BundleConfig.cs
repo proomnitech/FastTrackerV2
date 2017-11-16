@@ -25,7 +25,8 @@ namespace NewProject.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/css/bootstrap.css",
-                      "~/Content/css/site.css"));
+                      "~/Content/css/responsive.css",
+                      "~/Content/css/style.css"));
         }
     }
 }

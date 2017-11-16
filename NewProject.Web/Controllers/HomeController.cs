@@ -15,14 +15,42 @@ namespace NewProject.Web.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Application description page.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Application contact page.";
+
+            return View();
+        }
+
+        public ActionResult Dropdown()
+        {
+            ViewBag.Message = "Application dropdown page.";
+
+            return View();
+        }
+
+        public ActionResult SubMenu1()
+        {
+            ViewBag.Message = "Application submenu 1 page.";
+
+            return View();
+        }
+
+        public ActionResult SubMenu2()
+        {
+            ViewBag.Message = "Application submenu 2 page.";
+
+            return View();
+        }
+
+        public ActionResult SubMenu3()
+        {
+            ViewBag.Message = "Application submenu 3 page.";
 
             return View();
         }
