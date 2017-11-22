@@ -129,6 +129,7 @@
     <Reference Include="Syncfusion.Olap.Base, Version=15.4450.0.17, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Pdf.Base, Version=15.4450.0.17, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.PivotAnalysis.Base, Version=15.4450.0.17, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.PMML.Base, Version=15.4450.0.17, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Presentation.Base, Version=15.4450.0.17, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.SFMaps.WPF, Version=15.4450.0.17, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Shared.Wpf, Version=15.4450.0.17, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -1641,6 +1642,7 @@
     <Content Include="Views\Home\SubMenu3.cshtml" />
     <Content Include="Views\Home\SubMenu1.cshtml" />
     <Content Include="Views\Home\SubMenu2.cshtml" />
+    <Content Include="Views\Shared\_Layout - Copy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
