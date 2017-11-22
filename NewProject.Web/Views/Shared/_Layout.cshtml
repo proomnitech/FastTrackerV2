@@ -45,6 +45,10 @@
     <link rel="apple-touch-icon-precomposed" href="images/fav-57.png">
     <link rel="shortcut icon" href="images/fav.png">
 
+	 	@Styles.Render("http://cdn.syncfusion.com/15.4.0.17/js/web/bootstrap-theme/ej.web.all.min.css")
+      @Scripts.Render("http://cdn.syncfusion.com/js/assets/external/jsrender.min.js")
+      @Scripts.Render("http://cdn.syncfusion.com/15.4.0.17/js/web/ej.web.all.min.js")
+      @Scripts.Render("http://cdn.syncfusion.com/15.4.0.17/js/common/ej.unobtrusive.min.js")
 </head>
 
 <body>
@@ -94,9 +98,7 @@
                         <li>@Html.ActionLink("About", "About", "Home")</li>
                         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                DROPDOWN
-                            </a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">DROPDOWN <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li>@Html.ActionLink("SUBMENU1", "SubMenu1", "Home")</li>
                                 <li>@Html.ActionLink("SUBMENU2", "SubMenu2", "Home")</li>
@@ -256,6 +258,7 @@
         </div>
         <!-- Copyright Ends -->
     </footer>
+	@Html.EJ().ScriptManager()
     <!-- Footer Ends -->
     <!-- Template JS Files -->
     <script src="~/Scripts/jquery-3.2.1.min.js"></script>
