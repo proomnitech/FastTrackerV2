@@ -1,0 +1,21 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Column 1</h2>
+        <p>This is some column text</p>
+        @Html.EJ().DatePicker("DatePick").DateFormat("MM/dd/yyyy").ShowOtherMonths(true).EnableRTL(false).Locale("en-US")
+    </div>
+    <div class="col-md-4">
+        <h2>Column 2</h2>
+        <p>This is some column text</p>
+        @(Html.EJ().CircularGauge("circulargauge"))
+    </div>
+    <div class="col-md-4">
+        <h2>Column 3</h2>
+        <p>This is some column text</p>
+        @Html.EJ().Captcha("SignUpCaptcha")
+    </div>
+</div>

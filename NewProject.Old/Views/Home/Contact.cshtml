@@ -1,0 +1,101 @@
+@{
+    ViewBag.Title = "Contact";
+}
+@*<h2>@ViewBag.Title.</h2>*@
+@*<h3>@ViewBag.Message</h3>*@
+
+<!-- Main Container Starts -->
+<div class="row">
+    <!-- Main Heading Starts -->
+    <h4 class="main-heading-1">Contact Us</h4>
+    <!-- Main Heading Ends -->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <!-- Contact Address Starts -->
+    <ul class="list-unstyled address-list">
+        <li>
+            <i class="fa fa-phone"></i>
+            (123) 456-7890
+        </li>
+        <li>
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:quickhelp@mydomain.com">quickhelp@mydomain.com</a>
+        </li>
+        <li>
+            <i class="fa fa-globe"></i>
+            <a href="#">www.mydomain.com</a>
+        </li>
+        <li>
+            <i class="fa fa-clock-o"></i>
+            Mon - Sat 9:00 am - 7:00 pm
+        </li>
+        <li>
+            <i class="fa fa-map-marker"></i>
+            441 Red Hills Colony Rd, Banjara Hills, CA 60258
+        </li>
+    </ul>
+    <!-- Contact Address Starts -->
+    <!-- Map & Form Starts -->
+    <div class="row">
+        <!-- Map Starts -->
+        @*<div class="col-sm-6 col-xs-12">
+                <div class="map"></div>
+            </div>*@
+        <!-- Map Ends -->
+        <!-- Contact Form Starts -->
+        <div class="col-sm-6 col-xs-12">
+            <div class="status alert alert-success contact-status"></div>
+            <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form">
+                <div class="row">
+                    <!-- Name Field Starts -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name" class="sr-only">Name: </label>
+                            <input type="text" class="form-control" name="name" id="name" required="required" placeholder="NAME">
+                        </div>
+                    </div>
+                    <!-- Name Field Ends -->
+                    <!-- Email Field Starts -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email: </label>
+                            <input type="text" class="form-control" name="email" id="email" required="required" placeholder="EMAIL">
+                        </div>
+                    </div>
+                    <!-- Email Field Ends -->
+                    <!-- Phone No Field Starts -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="phoneno" class="sr-only">Phone No: </label>
+                            <input type="text" class="form-control" name="phoneno" id="phoneno" required="required" placeholder="PHONE NO">
+                        </div>
+                    </div>
+                    <!-- Phone No Field Ends -->
+                    <!-- Subject Field Starts -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="subject" class="sr-only">Subject: </label>
+                            <input type="text" class="form-control" name="subject" id="subject" required="required" placeholder="SUBJECT">
+                        </div>
+                    </div>
+                    <!-- Subject Field Ends -->
+                    <!-- Message Field Starts -->
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label for="message" class="sr-only">Message: </label>
+                            <textarea class="form-control" rows="4" name="message" id="message" required="required" placeholder="MESSAGE"></textarea>
+                        </div>
+                    </div>
+                    <!-- Message Field Ends -->
+                    <div class="col-xs-6">
+                        <input type="submit" class="btn btn-lg btn-block btn-secondary text-uppercase" value="Submit Form">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Contact Form Ends -->
+    </div>
+    <!-- Map & Form Ends -->
+</div>
+<!-- Main Container Ends -->

@@ -13,10 +13,10 @@
     <title>@ViewBag.Title - NewProject</title>
     @*@Html.Partial("_GoogleAnalytics")*@
 
-
+    
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    @Styles.Render("http://cdn.syncfusion.com/15.4.0.17/js/web/bootstrap-theme/ej.web.all.min.css")
+	@Styles.Render("http://cdn.syncfusion.com/15.4.0.17/js/web/bootstrap-theme/ej.web.all.min.css")
     @Scripts.Render("http://cdn.syncfusion.com/js/assets/external/jquery-3.1.1.min.js")
     @Scripts.Render("http://cdn.syncfusion.com/js/assets/external/jsrender.min.js")
     @Scripts.Render("http://cdn.syncfusion.com/15.4.0.17/js/web/ej.web.all.min.js")
@@ -59,17 +59,18 @@
     <header class="main-header">
 
         <!-- Top Bar Starts -->
-        <div class="top-bar hidden-xs">
-                <div class="container">
-                    <ul class="list-unstyled list-inline clearfix">
-                        <li class="pull-left">Optional Top Header Bar</li>
-                        <li class="pull-right">
-                            Email : <a href="mailto:info@newproject.com">info@QwikCapper.com</a>
-                        </li>
-                    </ul>
-                </div>
+        @*<div class="top-bar hidden-xs">
+            <div class="container">
+                <ul class="list-unstyled list-inline clearfix">
+                    <li class="pull-left">Optional Top Header Bar</li>
+                    <li class="pull-right">
+                        Email : <a href="mailto:info@NewProject.com">info@NewProject.com</a>
+                    </li>
+                </ul>
             </div>
+        </div>*@
         <!-- Top Bar Starts -->
+
         <!-- Navbar Starts -->
         <nav id="nav" class="navbar navbar-default navbar-static-top" role="navigation">
             <!-- Container Starts -->
@@ -84,14 +85,15 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!-- Collapse Button Ends -->
+
                     <!-- Logo Starts -->
                     <a href="@Url.Action("Index", "Home", new { area = "" })" class="navbar-brand">
-                        <img src="@Url.Content("~/Content/images/logo_ph.png")" alt="Logo" style="width:22rem;">
-                    </a>
+                    <img src="@Url.Content("~/Content/images/logo-NewProject.png")" alt="Logo" style="width:15rem;"></a>
                     @*ToDo: Work this class in: class="img-responsive"*@
                     <!-- Logo Ends -->
                 </div>
                 <!-- Navbar Header Ends -->
+
                 <!-- Navbar Collapse Starts -->
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -99,8 +101,9 @@
                         <li>@Html.ActionLink("About", "About", "Home")</li>
                         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >RESOURCES <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
+                                @*<a href="#" data-toggle="dropdown" class="dropdown-toggle" role="button">Tea Gardens<b class="caret"></b></a>*@
                                 <li>@Html.ActionLink("SUBMENU1", "SubMenu1", "Home")</li>
                                 <li class="disabled">@Html.ActionLink("SUBMENU2", "SubMenu2", "Home")</li>
                                 <li class="disabled">@Html.ActionLink("SUBMENU3", "SubMenu3", "Home")</li>
@@ -134,25 +137,26 @@
     <!-- Slider Section Starts -->
     @*<section class="slider clearfix">
         <div id="camera_wrap_1" class="camera_wrap">*@
-    <!-- Slide #1 Starts -->
-    @*<div data-src="images/slider/slider-img1.jpg">
-            <div class="camera_caption fadeFromLeft hidden-xs">
-                <h2>Qualified Staff With</h2>
-                <h2>Expertise in Dential Services</h2>
-            </div>
-        </div>*@
-    <!-- Slide #1 Ends -->
-    <!-- Slide #2 Starts -->
-    @*<div data-src="images/slider/slider-img2.jpg">
-            <div class="camera_caption fadeFromRight hidden-xs">
-                <h2>Heading #2</h2>
-                <h2>Some text goes here...</h2>
-            </div>
-        </div>*@
-    <!-- Slide #2 Ends -->
-    @*</div>
-        </section>*@
+            <!-- Slide #1 Starts -->
+            @*<div data-src="images/slider/slider-img1.jpg">
+                <div class="camera_caption fadeFromLeft hidden-xs">
+                    <h2>Qualified Staff With</h2>
+                    <h2>Expertise in Dential Services</h2>
+                </div>
+            </div>*@
+            <!-- Slide #1 Ends -->
+            <!-- Slide #2 Starts -->
+            @*<div data-src="images/slider/slider-img2.jpg">
+                <div class="camera_caption fadeFromRight hidden-xs">
+                    <h2>Heading #2</h2>
+                    <h2>Some text goes here...</h2>
+                </div>
+            </div>*@
+            <!-- Slide #2 Ends -->
+        @*</div>
+    </section>*@
     <!-- Slider Section Ends -->
+
     <!-- Main Container Starts -->
     <div class="container main-container">
         <div class="container body-content">
@@ -160,6 +164,7 @@
         </div>
     </div>
     <!-- Main Container Ends -->
+
     <!-- Footer Starts -->
     <footer class="main-footer">
         <!-- Footer Area Starts -->
@@ -219,11 +224,13 @@
                     <!-- List3 Ends -->
                     <!-- Info Starts -->
                     <div class="col-md-5 col-xs-12 col-md-offset-1">
-                        <h3 class="footer-main-head">The New Project</h3>
+                        @*<div class="footer-main-head">
+                        <img src="@Url.Content("~/Content/images/NewProject-logo-213-100.png")" alt="Logo" style="width:22rem;"></a>
+                        </div>*@
                         <ul class="list-unstyled footer-links-style-2">
                             <li>
                                 <i class="fa fa-map-marker"></i>
-                                440 Red Hills Rd, Chicago, IL 60609
+                                441 Red Hills Colony Rd, Banjara Hills, CA 60258
                             </li>
                             <li>
                                 <i class="fa fa-mobile"></i>
@@ -231,7 +238,7 @@
                             </li>
                             <li>
                                 <i class="fa fa-envelope"></i>
-                                <a href="mailto:info@demowebsite.info">info@newproject.com</a>, <a href="mailto:support@demowebsite.info">support@newproject.com</a>
+                                <a href="mailto:info@demowebsite.info">info@NewProject.com</a>, <a href="mailto:support@demowebsite.info">support@demowebsite.info</a>
                             </li>
                         </ul>
                         <ul class="list-unstyled list-inline footer-sm-links">
@@ -250,7 +257,7 @@
         <!-- Copyright Starts -->
         <div class="copyright">
             <div class="container text-center">
-                &copy; @DateTime.Now.Year All Rights Reserved <strong>Exponential Innovations Corp.</strong>.
+                &copy; @DateTime.Now.Year All Rights Reserved <strong>Dynamic Sports Technology, LLC</strong>.
             </div>
         </div>
         <!-- Copyright Ends -->

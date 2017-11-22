@@ -4,8 +4,8 @@
 
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
@@ -13,12 +13,14 @@
     <title>@ViewBag.Title - NewProject</title>
     @*@Html.Partial("_GoogleAnalytics")*@
 
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Styles.Render("http://cdn.syncfusion.com/15.4.0.17/js/web/bootstrap-theme/ej.web.all.min.css")
     @Scripts.Render("http://cdn.syncfusion.com/js/assets/external/jquery-3.1.1.min.js")
     @Scripts.Render("http://cdn.syncfusion.com/js/assets/external/jsrender.min.js")
     @Scripts.Render("http://cdn.syncfusion.com/15.4.0.17/js/web/ej.web.all.min.js")
+    @Scripts.Render("http://cdn.syncfusion.com/15.4.0.17/js/common/ej.unobtrusive.min.js")
 
     <!-- Bootstrap -->
     <link href="~/Content/css/bootstrap.min.css" rel="stylesheet">
@@ -59,17 +61,16 @@
 
         <!-- Top Bar Starts -->
         <div class="top-bar hidden-xs">
-            <div class="container">
-                <ul class="list-unstyled list-inline clearfix">
-                    <li class="pull-left">Optional Top Header Bar</li>
-                    <li class="pull-right">
-                        Email : <a href="mailto:info@newproject.com">info@newproject.com</a>
-                    </li>
-                </ul>
+                <div class="container">
+                    <ul class="list-unstyled list-inline clearfix">
+                        <li class="pull-left">Optional Top Header Bar (can be turned off)</li>
+                        <li class="pull-right">
+                            Email : <a href="mailto:info@newproject.com">info@newproject.com</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
         <!-- Top Bar Starts -->
-
         <!-- Navbar Starts -->
         <nav id="nav" class="navbar navbar-default navbar-static-top" role="navigation">
             <!-- Container Starts -->
@@ -84,15 +85,14 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!-- Collapse Button Ends -->
-
                     <!-- Logo Starts -->
                     <a href="@Url.Action("Index", "Home", new { area = "" })" class="navbar-brand">
-                    <img src="@Url.Content("~/Content/images/logo_ph.png")" alt="Logo" style="width:22rem;"></a>
+                        <img src="@Url.Content("~/Content/images/logo_ph.png")" alt="Logo" style="width:22rem;">
+                    </a>
                     @*ToDo: Work this class in: class="img-responsive"*@
                     <!-- Logo Ends -->
                 </div>
                 <!-- Navbar Header Ends -->
-
                 <!-- Navbar Collapse Starts -->
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -100,11 +100,11 @@
                         <li>@Html.ActionLink("About", "About", "Home")</li>
                         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">DROPDOWN <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li>@Html.ActionLink("SUBMENU1", "SubMenu1", "Home")</li>
-                                <li>@Html.ActionLink("SUBMENU2", "SubMenu2", "Home")</li>
-                                <li>@Html.ActionLink("SUBMENU3", "SubMenu3", "Home")</li>
+                                <li class="disabled">@Html.ActionLink("SUBMENU2", "SubMenu2", "Home")</li>
+                                <li class="disabled">@Html.ActionLink("SUBMENU3", "SubMenu3", "Home")</li>
                             </ul>
                         </li>
                         @if (Request.IsAuthenticated)
@@ -135,26 +135,25 @@
     <!-- Slider Section Starts -->
     @*<section class="slider clearfix">
         <div id="camera_wrap_1" class="camera_wrap">*@
-            <!-- Slide #1 Starts -->
-            @*<div data-src="images/slider/slider-img1.jpg">
-                <div class="camera_caption fadeFromLeft hidden-xs">
-                    <h2>Qualified Staff With</h2>
-                    <h2>Expertise in Dential Services</h2>
-                </div>
-            </div>*@
-            <!-- Slide #1 Ends -->
-            <!-- Slide #2 Starts -->
-            @*<div data-src="images/slider/slider-img2.jpg">
-                <div class="camera_caption fadeFromRight hidden-xs">
-                    <h2>Heading #2</h2>
-                    <h2>Some text goes here...</h2>
-                </div>
-            </div>*@
-            <!-- Slide #2 Ends -->
-        @*</div>
-    </section>*@
+    <!-- Slide #1 Starts -->
+    @*<div data-src="images/slider/slider-img1.jpg">
+            <div class="camera_caption fadeFromLeft hidden-xs">
+                <h2>Qualified Staff With</h2>
+                <h2>Expertise in Dential Services</h2>
+            </div>
+        </div>*@
+    <!-- Slide #1 Ends -->
+    <!-- Slide #2 Starts -->
+    @*<div data-src="images/slider/slider-img2.jpg">
+            <div class="camera_caption fadeFromRight hidden-xs">
+                <h2>Heading #2</h2>
+                <h2>Some text goes here...</h2>
+            </div>
+        </div>*@
+    <!-- Slide #2 Ends -->
+    @*</div>
+        </section>*@
     <!-- Slider Section Ends -->
-
     <!-- Main Container Starts -->
     <div class="container main-container">
         <div class="container body-content">
@@ -162,7 +161,6 @@
         </div>
     </div>
     <!-- Main Container Ends -->
-
     <!-- Footer Starts -->
     <footer class="main-footer">
         <!-- Footer Area Starts -->
@@ -253,7 +251,7 @@
         <!-- Copyright Starts -->
         <div class="copyright">
             <div class="container text-center">
-                &copy; @DateTime.Now.Year All Rights Reserved <strong>Exponential Innovations Corp</strong>.
+                &copy; @DateTime.Now.Year All Rights Reserved <strong>Exponential Innovations Corp.</strong>.
             </div>
         </div>
         <!-- Copyright Ends -->
@@ -276,8 +274,9 @@
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("http://cdn.syncfusion.com/js/assets/external/jsrender.min.js")
     @Scripts.Render("http://cdn.syncfusion.com/15.4.0.17/js/web/ej.web.all.min.js")
-    @RenderSection("scripts", required: false)
+
     @Html.EJ().ScriptManager()
+    @RenderSection("scripts", required: false)
 
 </body>
 </html>

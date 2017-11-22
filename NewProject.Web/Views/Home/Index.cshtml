@@ -1,17 +1,17 @@
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Home";
 }
 
 <div class="row">
     <div class="col-md-4">
         <h2>Column 1</h2>
-        <p>This is some column text</p>
-        @Html.EJ().DatePicker("DatePick").DateFormat("MM/dd/yyyy").ShowOtherMonths(true).EnableRTL(false).Locale("en-US")
+        <p>Select a date:</p>
+        @Html.EJ().DatePicker("DatePick").DateFormat("MM/dd/yyyy").ShowOtherMonths(false).EnableRTL(false).Locale("en-US")
     </div>
     <div class="col-md-4">
         <h2>Column 2</h2>
         <p>This is some column text</p>
-        @(Html.EJ().CircularGauge("circulargauge"))
+        @Html.EJ().DatePicker("datePicker").ShowTooltip(true).TooltipFormat("dd/MM/yy").ShowPopupButton(false).Width("100%")
     </div>
     <div class="col-md-4">
         <h2>Column 3</h2>
