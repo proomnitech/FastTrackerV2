@@ -108,12 +108,12 @@
                         @if (Request.IsAuthenticated)
                         {
                             @*@Html.Encode(User.Identity.Name)*@
-                            <li>@Html.ActionLink("SIGN OUT", "LogOff", "Account")</li>
+                            <li>@Html.ActionLink("Sign Out", "LogOff", "Account")</li>
                         }
                         else
                         {
-                            <li>@Html.ActionLink("SIGN IN", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
-                            <li>@Html.ActionLink("REGISTER", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                            <li>@Html.ActionLink("Sign In", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                            @*<li>@Html.ActionLink("REGISTER", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>*@
                         }
                         @*<li>@Html.Partial("_LoginPartial")</li>*@
                     </ul>
