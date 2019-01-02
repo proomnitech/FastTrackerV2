@@ -103,16 +103,7 @@
                         <li>@Html.ActionLink("Find Clinic", "Contact", "Home")</li>
                         <li>@Html.ActionLink("News", "About", "Home")</li>
                         <li>@Html.ActionLink("Events", "Contact", "Home")</li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                @*<a href="#" data-toggle="dropdown" class="dropdown-toggle" role="button">Tea Gardens<b class="caret"></b></a>*@
-                                <li>@Html.ActionLink("SUBMENU1", "SubMenu1", "Home")</li>
-                                <li class="disabled">@Html.ActionLink("SUBMENU2", "SubMenu2", "Home")</li>
-                                <li class="disabled">@Html.ActionLink("SUBMENU3", "SubMenu3", "Home")</li>
-                            </ul>
-                        </li>
+                        <li>@Html.ActionLink("Resources", "Contact", "Home")</li>
 
                         @if (Request.IsAuthenticated)
                         {
@@ -121,13 +112,8 @@
                         }
                         else
                         {
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Provider Login <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>@Html.ActionLink("SIGN IN", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
-                                    <li>@Html.ActionLink("REGISTER", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-                                </ul>
-                            </li>
+                            <li>@Html.ActionLink("SIGN IN", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                            <li>@Html.ActionLink("REGISTER", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
                         }
                         @*<li>@Html.Partial("_LoginPartial")</li>*@
                     </ul>
